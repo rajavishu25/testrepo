@@ -1,0 +1,19 @@
+alias py="cd ~/Developer/py"
+alias connect="export DOTENV=/opt/connect-api/.connect-api.env; export MBO_ENV=development; cd $HOME/Developer/py/connect-api; workon connect-api"
+alias mongorun="docker run -d -p 27017:27017 -v ~/data/mongo:/data/db -v ~/data/mongodump:/dump --name mongo mongo:3.6"
+alias mongo="docker exec -it mongo mongo"
+alias mongorestore="docker exec -it mongo mongorestore"
+alias mongodump="docker exec -it mongo mongodump"
+dwd() { 
+  cd $HOME/Developer/docker/$1
+}
+
+dcu() {
+	docker-compose up -d $1 
+}
+
+alias dcd="docker-compose down" 
+eval "$(pyenv init -)"
+
+export WORKON_HOME="~/Developer/py/virtualenvs"
+source ~/.pyenv/versions/3.8.2/bin/virtualenvwrapper.sh

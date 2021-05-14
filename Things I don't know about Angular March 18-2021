@@ -1,0 +1,7 @@
+Angular routing: sending data to another compoenents using routing
+Network tab in the chrome developer tools
+HTML 5 new features: webworkers
+local storage, session storage
+angular lifecycle methods except ngonchanges, ngoninit, and ngondestroy
+angular concepts such as hostbinding, viewchild, elementref, etc( get full clarity)
+deployment concepts such as docker, environment etc
